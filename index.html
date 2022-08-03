@@ -1,59 +1,82 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href= "style.css">
-    <link rel="stylesheet" href="reset.css">
-    <title>Document</title>
-  </head>
-
-  <body>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+    <title>Hamburgueria K Burguer</title>
+</head>
+<body>
     <header>
-      <div >
-          <h1><img class= "img" src="logo.png" alt="Logo da Hamburgueria"></h1>
-      </div>
+        <div>
+            <h1><img class= "logoimg" src="imagens/logo.png" alt="Logo da Hamburgueria"></h1>
+            <h1 class="textoDoTitulo">Nosso Cardápio</h1>
+        </div>
+        <div id="myBtnContainer">
+                <button class="btnr active" onclick="filterSelection('todos')"> Todos</button>
+                <button class="btnr" onclick="filterSelection('lanches')"> Lanches</button>
+                <button class="btnr" onclick="filterSelection('acompanhamentos')"> Acompanhamentos</button>
+                <button class="btnr" onclick="filterSelection('bebidas')"> Bebidas</button>
+        </div>
     </header>
-    <nav>
-      <ul>
-        <li><a class="logo">Nosso Cardápio</a></lis>
-      </ul>
-    </nav>
-  <main>
-    <section class="container">
-      <article class="item 0">
-        item 0
-      </article>
-      <article class="item 1">
-        item 1
-      </article>      
-      <article class="item 2">
-        item 2
-      </article>
-      <article class="item 3">
-        item 3
-      </article>
-      <article class="item 4">
-        item 4
-      </article>
-      <article class="item 5">
-        item 5
-      </article>
-      <article class="item 6">
-        item 6
-      </article>
-      <article class="item 7">
-        item 7
-      </article>
-      <article class="item 8">
-        item 8
-      </article>
-      <article class="item 9">
-        item 9
-      </article>
+    <main>
+        <div class="fileira">
+            <div class="coluna lanches">
+                <div class="conteudo">
+                  <img id="imgPosition" src="imagens/kBurguerTudo.jpg" alt="">
+                  <h4>K Burguer Tudo</h4>
+                  <p class="tipoProduto">Lanches</p>
+                  <button onclick="toggle0()" id="btnh0" class="btn"><i class="fa fa-heart"></i></button>
+                </div>
+            </div>
 
-    </section>
-  </main>
-  </body>
-</html>
+            <div class="coluna lanches">
+                <div class="conteudo">  
+                  <img id="imgPosition" src="imagens/kBacon.jpg" alt="">
+                  <h4>K Bacon </h4>
+                  <p class="tipoProduto">Lanches</p>
+                  <button onclick="toggle1()" id="btnh1" class="btn"><i class="fa fa-heart"></i></button>
+                </div>
+            </div>   
+            <div class="coluna acompanhamentos">
+                <div class="conteudo"> 
+                  <img id="imgPosition" src="imagens/batataFrita.jpg" alt="">
+                  <h4>Batata Frita</h4>
+                  <p class="tipoProduto">Acompanhamentos</p>
+                  <button onclick="toggle2()" id="btnh2" class="btn"><i class="fa fa-heart"></i></button>
+                </div>
+            </div>
+            
+            <div class="coluna acompanhamentos">
+                <div class="conteudo"> 
+                  <img id="imgPosition" src="imagens/nuggetsDeFrango.jpg" alt="">
+                  <h4>Nuggets de Frango</h4>
+                  <p class="tipoProduto">Acompanhamentos</p>
+                  <button onclick="toggle3()" id="btnh3" class="btn"><i class="fa fa-heart"></i></button>
+                </div>
+            </div>
+    
+            <div class="coluna bebidas">
+                <div class="conteudo"> 
+                  <img id="imgPosition" src="imagens/coca.jpg" alt="">
+                  <h4>Coca-Cola 500ML</h4>
+                  <p class="tipoProduto">Bebidas</p>
+                  <button onclick="toggle4()" id="btnh4" class="btn"><i class="fa fa-heart"></i></button>
+                </div>
+            </div>
+    
+            <div class="coluna bebidas">
+                <div class="conteudo"> 
+                  <img id="imgPosition" src="imagens/pepsi.jpg" alt="">
+                  <h4>Pepsi 500ML</h4>
+                  <p class="tipoProduto">Bebidas</p>
+                  <button onclick="toggle5()" id="btnh5" class="btn"><i class="fa fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+   
+    </main>
+  <footer>&copy; Copyright K BURGUER Hamburgueria Artesanal 2022</footer>
+</body>

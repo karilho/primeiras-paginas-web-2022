@@ -1,79 +1,142 @@
-body {
-    font-family: 'Montserrat', sans-serif;
+/* Ele todo */
+*{
+    margin: 0;
+    padding: 0;
+ }
+ 
+body{
+    min-height:800px;
+    background:rgb(168, 47, 47);
+    font-family:Arial;
 }
 
-header {
-    position: fixed;
+/* Cabeçalho */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
     background: rgb(231, 179, 47);
-    width: 100%;
+    padding: 0px 0;
+    text-align: center;
 }
 
-.img {
-    margin: 0px 30px auto;
+header .logoimg {
+    background-color: #f3f3f3;
+    margin-top:30px;
 }
 
-nav li {
-    display: inline;
-    position: fixed;
-    top: 130px;
-    left: 700px;
-
-}
-
-nav a {
+.textoDoTitulo {
     text-transform: uppercase;
     font-style: italic;
     color: #000000;
     font-weight: bold;
-    font-size: 50px;
-    text-decoration: none;
+    font-size: 60px;
 }
 
-nav a:hover {
+.textoDoTitulo:hover {
     color: #f3f3f3;
 }
 
-/* MAIN */ 
-
-main {
-    position: relative;
-    margin-top: 25px;
-    top: 225px;
-
-}
-
-.container {
-    margin-top: 25px;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-
-.item {
-    background-color: #333;
-    color: #fff;
-    width: 50%;
-    padding: 50px;
-    margin: 10px;
-}
-
-
-/* footer {
-    border: #BBBBBB;
+#myBtnContainer {
     text-align: center;
-    background-color: #BBBBBB;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 40px 0px;
 }
 
-.copyright {
-    color: #FFFFFF;
-    font-size: 15px;
-    margin-top: 20px;
-} */
+  /* Filtros */
+.btnr {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+  
+.btnr:hover {
+    background-color: rgb(214, 213, 213);
+}
+  
+.active {
+    background: rgb(214, 213, 213);
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+/* Corpo da página */
+main {
+    margin-top: 400px;
+    margin-left: 150px;
+}
+  
+.fileira {
+    width: 80%;
+    margin: 160px auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px;
+}
+  
+  /* Adiciona um padding entre as colunas. */
+.fileira,
+.fileira > .coluna {
+    padding: 8px;
+}
+  
+.coluna {
+    display: none;
+    background-color: #FFFFFF;
+    border: 0 solid transparent;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    box-shadow: 10px 10px 10px #4a2222; 
+}
+
+#imgPosition {
+    border-top-left-radius: 9px;
+    width: 400px;
+}  
+
+h4 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.tipoProduto {
+    font-size:30px
+}
+ 
+/* Conteudo dos produtos */
+.conteudo {
+    background-color: white;
+    padding: 10px auto;
+}
+  
+/* Adiciona e Remove a categoria show no html para filtro. */
+.show {
+    display: block;
+}
+ 
+/* Configuração do botão amei */
+
+.btn{
+    background: transparent;
+    border: none;
+    margin: 0px;
+    font-size: 20px;
+    color: grey;
+}
+
+.btn i:hover{
+    cursor: pointer;
+}
+
+/* Rodapé da página */
+footer{
+    display:block;
+    position:fixed;
+    width:100%;
+    bottom:0vh;
+    left:0;
+    background:rgb(231, 179, 47);
+    text-align:center;
+    padding: 20px 0;
+}
