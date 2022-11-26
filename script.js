@@ -52,58 +52,8 @@ for (var i = 0; i < btns.length; i++) {
 
 // Faz a função de marcar e desmarcar o coração trocando a cor de cinza para vermelho em um loop.
 // MELHORAR ESSA PARTE DO CÓDIGO FAZENDO ARRAY.
-function toggle0(){
-    var btnvar1 = document.getElementById('btnh0');
-         if (btnvar1.style.color =="red") {
-             btnvar1.style.color = "grey"
-         }
-         else{
-             btnvar1.style.color = "red"
-         }
-}
-
-function toggle1(){
-    var btnvar1 = document.getElementById('btnh1');
-         if (btnvar1.style.color =="red") {
-             btnvar1.style.color = "grey"
-         }
-         else{
-             btnvar1.style.color = "red"
-         }
-}
-
-function toggle2(){
-    var btnvar1 = document.getElementById('btnh2');
-         if (btnvar1.style.color =="red") {
-             btnvar1.style.color = "grey"
-         }
-         else{
-             btnvar1.style.color = "red"
-         }
-}
-
-function toggle3(){
-    var btnvar1 = document.getElementById('btnh3');
-         if (btnvar1.style.color =="red") {
-             btnvar1.style.color = "grey"
-         }
-         else{
-             btnvar1.style.color = "red"
-         }
-}
-
-function toggle4(){
-    var btnvar1 = document.getElementById('btnh4');
-         if (btnvar1.style.color =="red") {
-             btnvar1.style.color = "grey"
-         }
-         else{
-             btnvar1.style.color = "red"
-         }
-}
-
-function toggle5(){
-    var btnvar1 = document.getElementById('btnh5');
+function toggle(botaoDoCoracao){
+    var btnvar1 = document.getElementById(botaoDoCoracao);
          if (btnvar1.style.color =="red") {
              btnvar1.style.color = "grey"
          }
